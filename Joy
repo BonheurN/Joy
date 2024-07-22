@@ -1,0 +1,35 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+import javax.sound.sampled.*;
+
+public class Joy {
+	public static void main(String[]args) throws UnsupportedAudioFileException, IOException, LineUnavailableException, FileNotFoundException  {
+		try {
+		FileWriter writer = new FileWriter("Joy");
+		
+		writer.write("Joy seeps\n");
+		writer.write("into my bones\n");
+		writer.write("flooding the \n");
+		writer.write("marrow\n");
+		writer.write("tickling\n");
+		writer.write("the cells\n");
+		writer.write("until a slow wide\n");
+		writer.write("smile spread\n");
+		writer.write("across my face\n");
+		writer.append("\nBy Juliet Fay");
+		
+		writer.close();
+		}
+		catch(IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+}
+	
+
+
